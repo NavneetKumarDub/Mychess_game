@@ -42,7 +42,7 @@ export class Renderer {
           if (piece.color === 'white') {
             coloredSymbol = chalk.white.bold(symbol);
           } else {
-            coloredSymbol = chalk.black.bold(symbol);
+            coloredSymbol = chalk.gray.bold(symbol);
           }
         } else {
           coloredSymbol = ' ';

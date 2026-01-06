@@ -76,8 +76,7 @@ export class ChessBoard {
       for (let col = 0; col < 8; col++) {
         const piece = this.getPiece(row, col);
         if (piece && piece.color === opponentColor) {
-          // Simplified check - just check if destination is reachable
-          // This would need proper move validation in a complete implementation
+          // Check if any opponent piece can reach the king's position
           if (this.canPieceReach(row, col, kingPos.row, kingPos.col)) {
             return true;
           }
@@ -99,7 +98,7 @@ export class ChessBoard {
       case 'pawn':
         // Pawns can attack diagonally one square forward
         const direction = piece.color === 'white' ? -1 : 1;
-        return rowDiff === 1 && colDiff === 1 && (toRow - fromRow === direction);
+        return colDiff === 1 && (toRow - fromRow === direction);
       case 'rook':
         return (fromRow === toRow || fromCol === toCol) && this.isPathClear(fromRow, fromCol, toRow, toCol);
       case 'bishop':
