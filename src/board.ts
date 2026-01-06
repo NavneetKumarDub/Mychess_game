@@ -97,7 +97,9 @@ export class ChessBoard {
 
     switch (piece.type) {
       case 'pawn':
-        return false; // Simplified
+        // Pawns can attack diagonally one square forward
+        const direction = piece.color === 'white' ? -1 : 1;
+        return rowDiff === 1 && colDiff === 1 && (toRow - fromRow === direction);
       case 'rook':
         return (fromRow === toRow || fromCol === toCol) && this.isPathClear(fromRow, fromCol, toRow, toCol);
       case 'bishop':
