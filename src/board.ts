@@ -95,6 +95,8 @@ export class ChessBoard {
     switch (piece.type) {
       case 'pawn':
         // Pawns can attack diagonally one square forward
+        // This checks if the pawn threatens the square (used for check detection)
+        // Actual capture validation is done in moveValidator
         const direction = piece.color === 'white' ? -1 : 1;
         return colDiff === 1 && (toRow - fromRow === direction);
       case 'rook':

@@ -42,7 +42,7 @@ export class Renderer {
           if (piece.color === 'white') {
             coloredSymbol = chalk.white.bold(symbol);
           } else {
-            coloredSymbol = chalk.gray.bold(symbol);
+            coloredSymbol = chalk.blackBright.bold(symbol);
           }
         } else {
           coloredSymbol = ' ';
@@ -87,7 +87,7 @@ export class Renderer {
   }
 
   displayTurn(color: 'white' | 'black'): void {
-    const coloredTurn = color === 'white' ? chalk.white.bold('WHITE') : chalk.gray.bold('BLACK');
+    const coloredTurn = color === 'white' ? chalk.white.bold('WHITE') : chalk.blackBright.bold('BLACK');
     console.log(chalk.cyan(`\n${coloredTurn}'s turn\n`));
   }
 
