@@ -43,13 +43,11 @@ export class ChessBoard {
     const piece = this.getPiece(fromRow, fromCol);
     if (!piece) return false;
 
+    // Mark piece as having moved
+    piece.hasMoved = true;
+    
     this.setPiece(toRow, toCol, piece);
     this.setPiece(fromRow, fromCol, null);
-    
-    // Mark piece as having moved
-    if (piece) {
-      piece.hasMoved = true;
-    }
 
     return true;
   }

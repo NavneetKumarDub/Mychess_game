@@ -87,7 +87,7 @@ export class Renderer {
   }
 
   displayTurn(color: 'white' | 'black'): void {
-    const coloredTurn = color === 'white' ? chalk.white.bold('WHITE') : chalk.black.bold('BLACK');
+    const coloredTurn = color === 'white' ? chalk.white.bold('WHITE') : chalk.gray.bold('BLACK');
     console.log(chalk.cyan(`\n${coloredTurn}'s turn\n`));
   }
 
