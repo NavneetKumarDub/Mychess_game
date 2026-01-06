@@ -45,7 +45,7 @@ npm run dev
 - Enter moves in algebraic notation: `e2e4` (moves piece from e2 to e4)
 - Type `help` to see instructions
 - Type `quit` or `exit` to leave the game
-- White pieces are displayed in white, black pieces in black
+- White pieces are displayed in white, black pieces in gray (for better visibility)
 - The board uses a checkerboard pattern with white and blue squares
 - Selected squares are highlighted in green
 
