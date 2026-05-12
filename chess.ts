@@ -1,7 +1,6 @@
 //colour box//////////////////////////////////////////////////////
 import chalk from "chalk";
-import type { Chalk } from "chalk";
-type ChalkInstance = Chalk;
+import type { ChalkInstance } from "chalk";
 const black = chalk.bold.bgRgb(118, 150, 86),
   white = chalk.bold.bgRgb(238, 238, 210),
   blackp = chalk.bold.bgRgb(87, 83, 82),
