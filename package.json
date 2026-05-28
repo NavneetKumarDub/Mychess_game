@@ -1,5 +1,8 @@
 {
   "type": "module",
+  "scripts": {
+    "start": "NODE_OPTIONS=--no-deprecation tsx chess.ts"
+  },
   "dependencies": {
     "chalk": "^5.6.2",
     "ts-node": "^10.9.2"

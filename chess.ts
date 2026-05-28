@@ -697,9 +697,7 @@ function scan(char: string, ask: boolean): boolean {
       }
     }
   }
-  // clear("@", ask);
-  // print(false);
-  // clear("*");
+
   return true;
 }
 function clear(char: string, ask: boolean): void {
@@ -714,7 +712,6 @@ function clear(char: string, ask: boolean): void {
   }
 }
 
-// print();
 let blc = true,
   brc = true,
   bc = true,
