@@ -4,6 +4,10 @@ A terminal-based chess game built with **TypeScript** and **Node.js**.
 
 I made this project during the beginning of my second semester while learning TypeScript, terminal input handling, and chess move logic. The game runs completely inside the terminal and supports local two-player gameplay.
 
+## Photos
+<img width="473" height="497" alt="Screenshot From 2026-05-28 11-49-36" src="https://github.com/user-attachments/assets/261154b5-3389-4209-8612-c7fbad9f5844" />
+
+
 ## Demo
 
 https://github.com/user-attachments/assets/9d1b7712-ff17-4c69-957d-423f2403c659
